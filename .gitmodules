@@ -14,3 +14,7 @@
 	path = TURMA_NOITE/priscilascosta
 	url = https://github.com/priscilascosta/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/marcosccp04"]
+	path = TURMA_NOITE/marcosccp04
+	url = https://github.com/marcosccp04/ProgWeb
+	branch = master
