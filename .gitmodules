@@ -2,3 +2,7 @@
 	path = TURMA_NOITE/vmroque
 	url = https://github.com/vmroque/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/lucasenriquelv"]
+	path = TURMA_NOITE/lucasenriquelv
+	url = https://github.com/lucasenriquelv/ProgWeb
+	branch = master
