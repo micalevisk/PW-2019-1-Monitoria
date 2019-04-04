@@ -22,3 +22,7 @@
 	path = TURMA_NOITE/riverm4n
 	url = https://github.com/riverm4n/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/kelvinnpereira"]
+	path = TURMA_NOITE/kelvinnpereira
+	url = https://github.com/kelvinnpereira/ProgWeb
+	branch = master
