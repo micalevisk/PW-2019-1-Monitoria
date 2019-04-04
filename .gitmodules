@@ -18,3 +18,7 @@
 	path = TURMA_NOITE/marcosccp04
 	url = https://github.com/marcosccp04/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/riverm4n"]
+	path = TURMA_NOITE/riverm4n
+	url = https://github.com/riverm4n/ProgWeb
+	branch = master
