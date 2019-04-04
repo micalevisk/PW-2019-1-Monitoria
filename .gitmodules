@@ -6,3 +6,7 @@
 	path = TURMA_NOITE/lucasenriquelv
 	url = https://github.com/lucasenriquelv/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/anandagaguiar"]
+	path = TURMA_NOITE/anandagaguiar
+	url = https://github.com/anandagaguiar/ProgWeb
+	branch = master
