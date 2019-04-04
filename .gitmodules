@@ -10,3 +10,7 @@
 	path = TURMA_NOITE/anandagaguiar
 	url = https://github.com/anandagaguiar/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/priscilascosta"]
+	path = TURMA_NOITE/priscilascosta
+	url = https://github.com/priscilascosta/ProgWeb
+	branch = master
