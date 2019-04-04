@@ -4,5 +4,8 @@
   "description": "",
   "main": "index.js",
   "author": "Micael Levi L. C.",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "testcafe": "^1.1.0"
+  }
 }
