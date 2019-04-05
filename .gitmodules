@@ -34,3 +34,15 @@
 	path = TURMA_NOITE/sirchouette
 	url = https://github.com/sirchouette/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/andrelpv"]
+	path = TURMA_NOITE/andrelpv
+	url = https://github.com/andrelpv/ProgWeb
+	branch = master
+[submodule "TURMA_NOITE/danfilipe28"]
+	path = TURMA_NOITE/danfilipe28
+	url = https://github.com/danfilipe28/ProgWeb
+	branch = master
+[submodule "TURMA_NOITE/icomp-felipe"]
+	path = TURMA_NOITE/icomp-felipe
+	url = https://github.com/icomp-felipe/ProgWeb
+	branch = master
