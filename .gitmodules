@@ -30,3 +30,7 @@
 	path = TURMA_NOITE/luansm02
 	url = https://github.com/luansm02/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/sirchouette"]
+	path = TURMA_NOITE/sirchouette
+	url = https://github.com/sirchouette/ProgWeb
+	branch = master
