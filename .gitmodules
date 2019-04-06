@@ -46,3 +46,7 @@
 	path = TURMA_NOITE/icomp-felipe
 	url = https://github.com/icomp-felipe/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/willrobert"]
+	path = TURMA_NOITE/willrobert
+	url = https://github.com/willrobert/ProgWeb
+	branch = master
