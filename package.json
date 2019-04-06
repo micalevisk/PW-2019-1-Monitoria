@@ -1,11 +1,18 @@
 {
-  "name": "PW-2019-1-Monitoria",
+  "name": "pw-2019-1-monitoria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "Micael Levi L. C.",
+  "scripts": {
+    "nodemon": "nodemon"
+  },
   "license": "MIT",
   "dependencies": {
+    "google-spreadsheet": "^2.0.7",
     "testcafe": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
