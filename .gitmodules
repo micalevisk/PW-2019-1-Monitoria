@@ -50,3 +50,7 @@
 	path = TURMA_NOITE/willrobert
 	url = https://github.com/willrobert/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/rayanepinheiro"]
+	path = TURMA_NOITE/rayanepinheiro
+	url = https://github.com/rayanepinheiro/ProgWeb
+	branch = master
