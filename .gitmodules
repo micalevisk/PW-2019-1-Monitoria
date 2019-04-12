@@ -58,3 +58,11 @@
 	path = TURMA_NOITE/cleywert
 	url = https://github.com/cleywert/exercicios-de-web
 	branch = master
+[submodule "TURMA_NOITE/pabloitalo"]
+	path = TURMA_NOITE/pabloitalo
+	url = https://github.com/pabloitalo/ProgWeb
+	branch = master
+[submodule "TURMA_NOITE/isabellyrohana"]
+	path = TURMA_NOITE/isabellyrohana
+	url = https://github.com/isabellyrohana/ProgWeb
+	branch = master
