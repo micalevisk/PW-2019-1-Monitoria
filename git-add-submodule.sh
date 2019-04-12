@@ -6,8 +6,9 @@ turma="${2%%/*}"
 
 [ -d "./${turma}" ] || { echo "'./${turma}/' is not a directory." ; exit 2; }
 
-git rm --cached "./${turma}/${username}"
+git rm -rf --cached "./${turma}/${username}"
+rm -rf ".git/modules/${turma}/${username}"
 
-git submodule add -b master \
+git submodule add -b master -- \
   "https://github.com/${username}/ProgWeb" \
   "./${turma}/${username}"
