@@ -1,0 +1,27 @@
+{
+  "HTML1": {
+    "_id": "bef9906",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "logo do HTML5",
+          "border em TABLE"
+        ]
+      }
+    ]
+  },
+  "HTML2": {
+    "_id": "bef9906",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  }
+}

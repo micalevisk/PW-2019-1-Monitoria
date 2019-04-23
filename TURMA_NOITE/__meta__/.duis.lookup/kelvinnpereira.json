@@ -1,0 +1,26 @@
+{
+  "HTML1": {
+    "_id": "6a154e9",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "imagem referenciada mas não localizada"
+        ]
+      }
+    ]
+  },
+  "HTML2": {
+    "_id": "6a154e9",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "HTML1": {
+    "_id": "53ba1ed",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incorreto"
+      }
+    ]
+  },
+  "HTML2": {
+    "_id": "53ba1ed",
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  }
+}
