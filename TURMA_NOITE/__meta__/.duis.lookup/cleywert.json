@@ -1,6 +1,9 @@
 {
   "HTML1": {
     "_id": "bef9906",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -9,14 +12,17 @@
       {
         "q": "note:faltou",
         "a": [
-          "logo do HTML5",
-          "border em TABLE"
+          "imagem",
+          "bordas na tabela"
         ]
       }
     ]
   },
   "HTML2": {
     "_id": "bef9906",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",

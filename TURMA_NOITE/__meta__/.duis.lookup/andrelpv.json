@@ -1,6 +1,9 @@
 {
   "HTML1": {
     "_id": "7720fe3",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -10,6 +13,9 @@
   },
   "HTML2": {
     "_id": "7720fe3",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",

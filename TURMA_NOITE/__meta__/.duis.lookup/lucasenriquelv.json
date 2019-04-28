@@ -1,19 +1,37 @@
 {
   "HTML1": {
     "_id": "53ba1ed",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "incorreto"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "imagem"
+        ]
       }
     ]
   },
   "HTML2": {
     "_id": "53ba1ed",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "exato"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "header principal"
+        ]
       }
     ]
   }

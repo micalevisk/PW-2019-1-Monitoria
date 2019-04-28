@@ -1,6 +1,9 @@
 {
   "HTML1": {
     "_id": "c971542",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -9,13 +12,16 @@
       {
         "q": "note:faltou",
         "a": [
-          "logo do HTML5"
+          "imagem"
         ]
       }
     ]
   },
   "HTML2": {
     "_id": "c971542",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",

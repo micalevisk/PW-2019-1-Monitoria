@@ -1,6 +1,9 @@
 {
   "HTML1": {
     "_id": "61d6fbb",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -9,13 +12,16 @@
       {
         "q": "note:faltou",
         "a": [
-          "logo do HTML (está no lugar errado do markup)"
+          "imagem (está no lugar errado do markup)"
         ]
       }
     ]
   },
   "HTML2": {
     "_id": "61d6fbb",
+    "extra": {
+      "nota": 9.9
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -24,7 +30,7 @@
       {
         "q": "note:faltou",
         "a": [
-          "tag TEXTAREA (está usando como tipo do INPUT)"
+          "usar a tag TEXTAREA (está sendo usada como tipo do INPUT)"
         ]
       }
     ]

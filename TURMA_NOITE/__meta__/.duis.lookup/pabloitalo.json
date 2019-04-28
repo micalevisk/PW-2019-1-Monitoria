@@ -1,6 +1,9 @@
 {
   "HTML1": {
-    "_id": "cc05f9b",
+    "_id": "5d577e3",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",
@@ -9,7 +12,10 @@
     ]
   },
   "HTML2": {
-    "_id": "cc05f9b",
+    "_id": "5d577e3",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",

@@ -30,7 +30,6 @@ const workingdirQuestions = [
     name: 'cell:nota',
     message: 'Avaliação',
     choices: metodologia['DESCRIÇÃO'],
-    default: 'Exato',
     filter: choice => lookupsForLabels[choice],
   },
   {

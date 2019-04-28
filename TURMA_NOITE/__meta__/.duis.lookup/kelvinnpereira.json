@@ -1,21 +1,21 @@
 {
   "HTML1": {
-    "_id": "6a154e9",
+    "_id": "9edc926",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "quase"
-      },
-      {
-        "q": "note:faltou",
-        "a": [
-          "imagem referenciada mas não localizada"
-        ]
+        "a": "exato"
       }
     ]
   },
   "HTML2": {
-    "_id": "6a154e9",
+    "_id": "9edc926",
+    "extra": {
+      "nota": 10
+    },
     "prompts": [
       {
         "q": "cell:nota",
