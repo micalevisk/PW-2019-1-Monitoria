@@ -5,14 +5,10 @@
   "main": "index.js",
   "author": "Micael Levi L. C.",
   "scripts": {
-    "nodemon": "nodemon"
+    "start": "node ."
   },
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.2.2",
-    "testcafe": "^1.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.10"
+    "md-2-json": "git+https://github.com/micalevisk/md-2-json.git"
   }
 }

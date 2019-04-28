@@ -29,7 +29,7 @@ root dir = diretório que contém o `.git`
 // ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝███████║
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ ╚══════╝
 
-const myQuestionsToEachWorkingdir = require('./duis.questions')
+const { myQuestionsToEachWorkingdir, myLookupAttachExtra } = require('./duis.questions')
 
 // perguntas cuja respostas definirão mais variáveis na config abaixo
 // Se `name` estiver com todas as letras em maiúsculas, a resposta será tratada como variável a ser usada nos templates
@@ -59,7 +59,7 @@ module.exports = {
   // workingdirParentDirPathMask: './{TURMA}/{NICK_ALUNO}/',
 
   // a partir do diretório "workingdir", é preciso voltar quantos níveis para ir ao que tem o `.git` (do aluno)?
-  levelsToRootDir: 1, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
+  levelsToRootDir: 0, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
 
   // navegador que abrirá na pasta do aluno (ou o server, se iniciado)
   browser: {
@@ -76,7 +76,7 @@ module.exports = {
   /*************************** OPCIONAIS ***************************/
 
   // porta em que o servidor PHP tentará escutar
-  serverPort: 8080,
+  _serverPort: 8080,
 
   _test: {
     // como devem terminar os arquivos de testes, i.e, a extensão deles
@@ -92,6 +92,9 @@ module.exports = {
 
   // questões a serem respondidas após realizar os testes, i.e., após abrir o navegador no "workingdir" corrente
   workingdirQuestions: myQuestionsToEachWorkingdir,
+
+  // função pura que receberá as repostas dadas a `workingdirQuestions` retornará um objeto que será o valor da propriedade `extra` do objeto a ser gravado no lookup file, para o workingdir corrente
+  lookupAttachExtra: myLookupAttachExtra,
 
   // comandos a serem executados na linha de comandos no diretório "root" (git directory)
   _commandsForEachRootDir: {
