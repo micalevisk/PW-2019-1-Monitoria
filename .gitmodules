@@ -74,3 +74,7 @@
 	path = TURMA_NOITE/joaodanilo
 	url = https://github.com/joaodanilo/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/alexandermdc"]
+	path = TURMA_NOITE/alexandermdc
+	url = https://github.com/alexandermdc/ProgWeb
+	branch = master
