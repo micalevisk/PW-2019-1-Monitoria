@@ -1,11 +1,8 @@
-workflow "Shellcheck" {
+workflow "Run shellcheck on all sh files" {
   on = "push"
-  resolves = [
-    "Shellcheck",
-  ]
+  resolves = ["Shellcheck"]
 }
 
-
 action "Shellcheck" {
-  uses = "ludeeus/actions/shellcheck@master"
+  uses = "ludeeus/action-shellcheck@master"
 }
