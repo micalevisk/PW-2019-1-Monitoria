@@ -10,7 +10,7 @@ show_help_and_exit() {
 
 command="${1,,}"
 
-if [ $command == "add" ]; then
+if [ "$command" == "add" ]; then
   [ $# -lt 3 ] && show_help_and_exit
 
   turma="${2%%/*}"
