@@ -82,3 +82,7 @@
 	path = TURMA_NOITE/ponciano7
 	url = https://github.com/ponciano7/progweb2
 	branch = master
+[submodule "TURMA_NOITE/levirod"]
+	path = TURMA_NOITE/levirod
+	url = https://github.com/levirod/progweb
+	branch = master
