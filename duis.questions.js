@@ -1,21 +1,8 @@
-const path = require('path')
-const fs = require('fs')
-const { parse: md2jsonParser } = require('md-2-json')
 const _ = require('./helpers')
 
-const MD_README_FILE_CONTENT = fs.readFileSync(
-  path.join(__dirname, 'README.md')
-  //       \________/
-  //           |
-  //           +---> necessário pois este script será usado em outro CWD, então não basta `./metodologia.txt`
-).toString()
+const markdownREADME = _.markdownToJSON( _.readFile('README.md') )
 
-const { raw: markdownTable } = _.findValueByKey(
-  md2jsonParser(MD_README_FILE_CONTENT),
-  key => key.startsWith('<!-- :metodo -->')
-)
-
-const metodologia = _.markdownTableToJSON(markdownTable)
+const metodologia = _.getTableFromMarkdownSection(markdownREADME, 'metodo')
 
 const formatFor = (src, fnCasting = String) => (target, prop, idx) =>
   Object.assign(target, { [prop]: fnCasting(src[idx]) })
