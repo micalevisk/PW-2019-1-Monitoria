@@ -86,3 +86,7 @@
 	path = TURMA_NOITE/levirod
 	url = https://github.com/levirod/progweb
 	branch = master
+[submodule "TURMA_NOITE/aplos21"]
+	path = TURMA_NOITE/aplos21
+	url = https://github.com/aplos21/progweb
+	branch = master
