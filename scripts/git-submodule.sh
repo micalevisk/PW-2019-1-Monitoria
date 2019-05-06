@@ -1,7 +1,7 @@
 #!/bin/bash
 
 show_help_and_exit() {
-  echo "USAGE: $0 {add <turma> <username> [repo-name] | pull}"
+  printf "USAGE: $0 {add <target_dir> <username> [repo-name] | pull}\\n"
   exit 1
 }
 
@@ -13,18 +13,26 @@ command="${1,,}"
 if [ "$command" == "add" ]; then
   [ $# -lt 3 ] && show_help_and_exit
 
-  turma="${2%%/*}"
-  username="${3,,}"
-  repo_name="${4:-ProgWeb}"
+  TARGET_DIR="${2%%/*}"
+  USERNAME="${3,,}"
+  REPO_NAME="${4:-ProgWeb}"
 
-  [ -d "./${turma}" ] || { echo "'./${turma}/' is not a directory." ; exit 2; }
+  [ -d "${TARGET_DIR}" ] || { printf "'${TARGET_DIR}' is not a directory.\\n" ; exit 2; }
 
-  git rm -rf --cached "./${turma}/${username}"
-  rm -rf ".git/modules/${turma}/${username}"
+  git rm -rf --cached "${TARGET_DIR}/${USERNAME}"
+  rm -rf ".git/modules/${TARGET_DIR#*/}/${USERNAME}"
 
-  git submodule add -b master -- \
-    "https://github.com/${username}/${repo_name}" \
-    "./${turma}/${username}"
+  git submodule add -b "master" -- \
+    "https://github.com/${USERNAME}/${REPO_NAME}" \
+    "${TARGET_DIR}/${USERNAME}"
+
+  read -rsn1 -p 'Can commit? (y/N) ' can_commit
+  [ "${can_commit,,}" == "y" ] && {
+    printf "\\n"
+    COMMIT_MSG="add: submodule @${USERNAME}"
+    git commit -m "${COMMIT_MSG}"
+  }
+
 elif [ "$command" == "pull" ]; then
   git submodule update --recursive --remote
 fi
