@@ -14,7 +14,7 @@ LOOKUP_DIR_PATH="${TURMA}/__meta__/.duis.lookup/"
 
 files_to_commit="$(git ls-files -t --others --modified "${LOOKUP_DIR_PATH}" | cut -d' ' -f2)"
 
-[ -z "${files_to_commit}" ] && { printf "Nothing to stage\\n"; exit 0; }
+[ -z "${files_to_commit}" ] && { printf "Nothing to stage.\\n"; exit 0; }
 
 mapfile -t arrfiles <<< "$files_to_commit" ## will logs the files
 
