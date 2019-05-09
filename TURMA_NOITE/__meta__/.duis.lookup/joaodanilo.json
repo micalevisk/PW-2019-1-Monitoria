@@ -7,7 +7,7 @@
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "incorreto"
+        "a": "inválido"
       }
     ]
   },
@@ -19,7 +19,7 @@
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "incorreto"
+        "a": "inválido"
       }
     ]
   }
