@@ -27,3 +27,4 @@ ATIVIDADE | PRAZO
 [JS4](./exercícios/JS4.png)     | 16-05-2019
 [DOM1](./exercícios/DOM1.png)   | 16-05-2019
 [DOM2](./exercícios/DOM2.png)   | 16-05-2019
+[DOM3](./exercícios/DOM3.png)   | 16-05-2019
