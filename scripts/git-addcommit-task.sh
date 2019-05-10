@@ -23,7 +23,7 @@ COMMIT_DESCRIPTION="$(mapfile -c 1 -C 'to_username' -t <<< "$files_to_commit")"
 
 printf "%s\\n" "${arrfiles[@]}"
 
-COMMIT_MSG="correção-${TASK_ID}: ${#arrfiles[@]} alunos"
+COMMIT_MSG="correção-${TASK_ID}: ${#arrfiles[@]} aluno(s)"
 
 read -rsn1 -p 'Can add & commit? (y/N) ' can_commit
 [ "${can_commit,,}" == "y" ] && {
