@@ -1,7 +1,6 @@
 const _ = require('./helpers')
 
 const markdownREADME = _.markdownToJSON( _.readFile('README.md') )
-
 const metodologia = _.getTableFromMarkdownSection(markdownREADME, 'metodo')
 
 const formatFor = (src, fnCasting = String) => (target, prop, idx) =>
@@ -23,8 +22,16 @@ const workingdirQuestions = [
     type: 'input',
     name: 'note:faltou',
     message: 'O que faltou? (separar por `;`)',
-    when: answsers => answsers['cell:nota'] === 'quase',
-    filter: answser => answser.split(';').map(a => a.trim()),
+    when: answsers => ['quase', 'incompleto'].includes(answsers['cell:nota']),
+    filter: answer => answer.split(';').map(a => a.trim()),
+  },
+  {
+    type: 'input',
+    name: 'cell:nota',
+    message: 'Informe uma nota',
+    when: answsers => answsers['cell:nota'] === 'outro',
+    validate: input => !isNaN(parseFloat(input)),
+    filter: answer => parseFloat(answer).toFixed(2),
   }
 ]
 

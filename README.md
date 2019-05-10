@@ -10,6 +10,7 @@ exato+extra | 11   | Exato com "extra"
 plágio      | 0    | Plágio ou cópia
 suspeito    | 5    | Suspeito de plágio
 inválido    | 0    | Não entregue ou incorreto
+incompleto  | 7    | Não finalizado (falta partes importantes)
 
 ## <!-- :prazos --> Prazos das correções
 > o valor da coluna `PRAZO` será usado como data máxima dos _commits_.
