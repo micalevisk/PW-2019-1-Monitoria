@@ -27,6 +27,13 @@ const workingdirQuestions = [
   },
   {
     type: 'input',
+    name: 'note:obs',
+    message: 'Observações (separar por `;`)',
+    when: answsers => ['plágio', 'suspeito'].includes(answsers['cell:nota']),
+    filter: answer => answer.split(';').map(a => a.trim()),
+  },
+  {
+    type: 'input',
     name: 'cell:nota',
     message: 'Informe uma nota',
     when: answsers => answsers['cell:nota'] === 'outro',
