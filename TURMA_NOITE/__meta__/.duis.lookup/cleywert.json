@@ -29,5 +29,41 @@
         "a": "exato"
       }
     ]
+  },
+  "CSS1": {
+    "_id": "38ccf90",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "CSS2": {
+    "_id": "38ccf90",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "CSS3": {
+    "_id": "38ccf90",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

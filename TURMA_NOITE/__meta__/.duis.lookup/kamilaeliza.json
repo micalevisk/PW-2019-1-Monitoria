@@ -46,5 +46,23 @@
         "a": "exato"
       }
     ]
+  },
+  "CSS3": {
+    "_id": "5c3b2d0",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "está usando `float:left`, gerando um resultado diferente do esperado (em viewports diferentes)"
+        ]
+      }
+    ]
   }
 }

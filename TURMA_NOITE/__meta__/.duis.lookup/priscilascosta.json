@@ -28,5 +28,53 @@
         "a": "exato"
       }
     ]
+  },
+  "CSS1": {
+    "_id": "917fcf8",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "informar o padding"
+        ]
+      }
+    ]
+  },
+  "CSS2": {
+    "_id": "917fcf8",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "transparência do background"
+        ]
+      }
+    ]
+  },
+  "CSS3": {
+    "_id": "917fcf8",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

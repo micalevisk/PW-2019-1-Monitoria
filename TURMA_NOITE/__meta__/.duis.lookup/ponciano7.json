@@ -22,5 +22,41 @@
         "a": "inválido"
       }
     ]
+  },
+  "CSS1": {
+    "_id": "5a366ec",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "CSS2": {
+    "_id": "5a366ec",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "CSS3": {
+    "_id": "5a366ec",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

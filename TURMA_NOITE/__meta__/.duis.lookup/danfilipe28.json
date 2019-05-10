@@ -34,5 +34,53 @@
         ]
       }
     ]
+  },
+  "CSS1": {
+    "_id": "5b11c37",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "usar o padding"
+        ]
+      }
+    ]
+  },
+  "CSS2": {
+    "_id": "78bd6cc",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "usar o background-repeat"
+        ]
+      }
+    ]
+  },
+  "CSS3": {
+    "_id": "78bd6cc",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }
