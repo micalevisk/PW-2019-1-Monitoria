@@ -32,7 +32,7 @@ root dir = diretório que contém o `.git`
 const { myQuestionsToEachWorkingdir, myLookupAttachExtra } = require('./duis.questions')
 
 // perguntas cuja respostas definirão mais variáveis na config abaixo
-// Se `name` estiver com todas as letras em maiúsculas, a resposta será tratada como variável a ser usada nos templates
+// Se `name` estiver com todas as letras em maiúsculo, a resposta será tratada como variável a ser usada nos templates
 const myStartQuestions = [
   {
     type: 'input',
@@ -50,30 +50,26 @@ const myStartQuestions = [
 ]
 
 module.exports = {
-
   // template do diretório que registrará as correções realizadas
   lookupDirPathMask: './{TURMA}/__meta__/.duis.lookup/',
 
   // template do diretório parent ao que será passado como arg do Duis
   workingdirParentDirPathMask: './{TURMA}/*/',
-  // workingdirParentDirPathMask: './{TURMA}/{NICK_ALUNO}/',
 
   // a partir do diretório "workingdir", é preciso voltar quantos níveis para ir ao que tem o `.git` (do aluno)?
   levelsToRootDir: 0, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
 
+  /*************************** OPCIONAIS ***************************/
+
+  // nome padrão para o identificador no lookup
+  entryDirName: '', // se for um valor falsy, o padrão será inferido a partir dos argumentos do CLI
+
   // navegador que abrirá na pasta do aluno (ou o server, se iniciado)
   browser: {
     name: 'chrome',
-    opts: '--incognito'
+    opts: '--incognito', // as opções que o navegador suporta, separadas por espaço
+    autoOpen: true, // se o navegador deve ser aberto automaticamente a cada "workingdir"
   },
-
-  // `true` se o navegador deve ser aberto automaticamente a cada "workingdir"
-  autoOpenBrowser: false,
-
-  // `true` para sempre confirmar a execução de comandos definidos pelo usuário
-  safeMode: true,
-
-  /*************************** OPCIONAIS ***************************/
 
   // porta em que o servidor PHP tentará escutar
   _serverPort: 8080,
@@ -96,11 +92,13 @@ module.exports = {
   // função pura que receberá as repostas dadas a `workingdirQuestions` retornará um objeto que será o valor da propriedade `extra` do objeto a ser gravado no lookup file, para o workingdir corrente
   lookupAttachExtra: myLookupAttachExtra,
 
+  // `true` para sempre confirmar a execução de comandos definidos pelo usuário
+  safe: true,
+
   // comandos a serem executados na linha de comandos no diretório "root" (git directory)
-  _commandsForEachRootDir: {
+  commandsForEachRootDir: {
     // antes de abrir o navegador na pasta do aluno (assim que entrar no workingdir)
     onEnter: [
-      'git checkout master',
       'git pull origin master',
     ],
     // após parar o servidor (antes de seguir para o próximo workingdir)
