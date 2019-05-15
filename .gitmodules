@@ -94,3 +94,7 @@
 	path = TURMA_NOITE/clemilton
 	url = https://github.com/clemilton/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/kamilaeliza"]
+	path = TURMA_NOITE/kamilaeliza
+	url = https://github.com/kamilaeliza/ProgWeb
+	branch = master
