@@ -29,3 +29,7 @@ ATIVIDADE | PRAZO
 [DOM1](./exercícios/DOM1.png)   | 16-05-2019
 [DOM2](./exercícios/DOM2.png)   | 16-05-2019
 [DOM3](./exercícios/DOM3.png)   | 16-05-2019
+
+## Exemplo usando o [Duis](https://github.com/micalevisk/duis)
+
+[![demo duis](https://asciinema.org/a/RgNLMiuKNnXVMWrQ1yvkHI83R.svg)](https://asciinema.org/a/RgNLMiuKNnXVMWrQ1yvkHI83R)
