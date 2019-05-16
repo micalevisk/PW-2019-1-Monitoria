@@ -94,11 +94,13 @@ module.exports = {
 
   // comandos a serem executados na linha de comandos em alguns estágios do duis-exec
   hooks: {
-    // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
-    onEnterWD: [
-      'git checkout master',
-      'git pull origin master',
+    // antes de procurar pelos diretórios
+    beforeStart: [
+      'git submodule update --recursive --remote',
     ],
+
+    // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
+    onEnterWD: [],
 
     // após parar o servidor -- antes de seguir para o próximo "workingdir"
     beforeLeaveWD: [],
