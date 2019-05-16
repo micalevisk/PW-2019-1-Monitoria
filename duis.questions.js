@@ -1,13 +1,15 @@
 const _ = require('./helpers')
 
-const markdownREADME = _.markdownToJSON( _.readFile('README.md') )
-const metodologia = _.getTableFromMarkdownSection(markdownREADME, 'metodo')
-
 const formatFor = (src, fnCasting = String) => (target, prop, idx) =>
   Object.assign(target, { [prop]: fnCasting(src[idx]) })
 
-const lookupsForLabels = metodologia['DESCRIÇÃO'].reduce(formatFor(metodologia['CATEGORIA']), {})
+const markdownREADME = _.markdownToJSON( _.readFile('README.md') )
 
+const metodologia = _.getTableFromMarkdownSection(markdownREADME, 'metodo')
+
+const lookupCategoriaFromDescricao = metodologia['DESCRIÇÃO'].reduce(formatFor(metodologia['CATEGORIA']), {})
+
+const getCategoriaFromAnswers = answers => answers['cell:nota']
 
 // ref: https://www.npmjs.com/package/inquirer#prompt
 const workingdirQuestions = [
@@ -16,38 +18,37 @@ const workingdirQuestions = [
     name: 'cell:nota',
     message: 'Avaliação',
     choices: metodologia['DESCRIÇÃO'],
-    filter: choice => lookupsForLabels[choice],
+    filter: choice => lookupCategoriaFromDescricao[choice],
   },
   {
     type: 'input',
     name: 'note:faltou',
     message: 'O que faltou? (separar por `;`)',
-    when: answsers => ['quase', 'incompleto'].includes(answsers['cell:nota']),
+    when: answers => ['quase', 'incompleto'].includes( getCategoriaFromAnswers(answers) ),
     filter: answer => answer.split(';').map(a => a.trim()),
   },
   {
     type: 'input',
     name: 'note:obs',
     message: 'Observações (separar por `;`)',
-    when: answsers => ['plágio', 'suspeito'].includes(answsers['cell:nota']),
+    when: answers => ['plágio', 'suspeito'].includes( getCategoriaFromAnswers(answers) ),
     filter: answer => answer.split(';').map(a => a.trim()),
   },
   {
     type: 'input',
     name: 'cell:nota',
     message: 'Informe uma nota',
-    when: answsers => answsers['cell:nota'] === 'outro',
+    when: answers => getCategoriaFromAnswers(answers) === 'outro',
     validate: input => !isNaN(parseFloat(input)),
     filter: answer => parseFloat(answer).toFixed(2),
   }
 ]
 
-const lookupAttachExtra = (answers) => {
-  const mapper = metodologia['CATEGORIA'].reduce(formatFor(metodologia['NOTA'], Number), {})
-  return {
-    'nota': mapper[answers['cell:nota']]
-  }
-}
+const lookupNotaFromCategoria = metodologia['CATEGORIA'].reduce(formatFor(metodologia['NOTA'], Number), {})
+
+const lookupAttachExtra = answers => ({
+  nota: lookupNotaFromCategoria[ getCategoriaFromAnswers(answers) ],
+})
 
 module.exports = {
   myQuestionsToEachWorkingdir: workingdirQuestions,
