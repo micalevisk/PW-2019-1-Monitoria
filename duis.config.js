@@ -41,15 +41,10 @@ const myStartQuestions = [
     default: 'TURMA_NOITE',
     validate: answer => !answer.trim() ? 'Informe algo' : true
   },
-  /*{
-    type: 'input',
-    name: 'NICK_ALUNO',
-    message: 'Nick do aluno (git repo) que será inspecionado',
-    default: '*'
-  },*/
 ]
 
 module.exports = {
+
   // template do diretório que registrará as correções realizadas
   lookupDirPathMask: './{TURMA}/__meta__/.duis.lookup/',
 
@@ -60,6 +55,11 @@ module.exports = {
   levelsToRootDir: 0, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
 
   /*************************** OPCIONAIS ***************************/
+
+  // lista de templates do glob pattern usado para ignorar durante a busca dos "parent dir"
+  excludeMasks: [
+    './{TURMA}/**/__*__', // exemplo: excluindo qualquer arquivo que inicie e termine com `__`
+  ],
 
   // nome padrão para o identificador no lookup
   entryDirName: '', // se for um valor falsy, o padrão será inferido a partir dos argumentos do CLI
@@ -92,18 +92,22 @@ module.exports = {
   // função pura que receberá as repostas dadas a `workingdirQuestions` retornará um objeto que será o valor da propriedade `extra` do objeto a ser gravado no lookup file, para o workingdir corrente
   lookupAttachExtra: myLookupAttachExtra,
 
-  // `true` para sempre confirmar a execução de comandos definidos pelo usuário
-  safe: true,
-
-  // comandos a serem executados na linha de comandos no diretório "root" (git directory)
-  commandsForEachRootDir: {
-    // antes de abrir o navegador na pasta do aluno (assim que entrar no workingdir)
-    onEnter: [
+  // comandos a serem executados na linha de comandos em alguns estágios do duis-exec
+  hooks: {
+    // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
+    onEnterWD: [
+      'git checkout master',
       'git pull origin master',
     ],
-    // após parar o servidor (antes de seguir para o próximo workingdir)
-    onBeforeLeave: [
-    ],
+
+    // após parar o servidor -- antes de seguir para o próximo "workingdir"
+    beforeLeaveWD: [],
+
+    // após ter percorrido todos os "workingdir" encontrados
+    onFinish: [],
   },
+
+  // `true` para sempre confirmar a execução de comandos definidos pelo usuário
+  safe: false,
 
 }
