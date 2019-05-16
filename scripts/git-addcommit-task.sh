@@ -22,7 +22,7 @@ COMMIT_MSG="correção-${TASK_ID}: ${#arrfiles[@]} aluno(s)"
 to_username() { printf "@%s\\n" $(basename "$2" ".json") ; }
 COMMIT_DESCRIPTION="$(mapfile -c 1 -C 'to_username' -t <<< "$files_to_commit")"
 
-printf "%s\\n" "${arrfiles[@]}"
+for i in "${!arrfiles[@]}"; do printf "%s %s\\n" "$((i + 1))" "${arrfiles[$i]}"; done
 
 read -rsn1 -p 'Can add & commit? (y/N) ' can_commit
 [ "${can_commit,,}" == "y" ] && {
