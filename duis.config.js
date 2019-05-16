@@ -96,7 +96,7 @@ module.exports = {
   hooks: {
     // antes de procurar pelos diretórios
     beforeStart: [
-      'git submodule update --recursive --remote',
+      './scripts/git-submodule.sh pull',
     ],
 
     // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
