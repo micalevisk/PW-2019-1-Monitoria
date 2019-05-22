@@ -64,5 +64,53 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "f5aede0",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "935a6ec",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "935a6ec",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "8c14578",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

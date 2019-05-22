@@ -82,5 +82,60 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "868e106",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "bf4b191",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "05b18ea",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "53aa86e",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não segue os itens 2 e 3 do enunciado",
+          "os métodos que retornam uma nova instância deveriam ser estáticos"
+        ]
+      }
+    ]
   }
 }

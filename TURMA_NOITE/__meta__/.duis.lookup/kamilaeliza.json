@@ -64,5 +64,60 @@
         ]
       }
     ]
+  },
+  "JS1": {
+    "_id": "5c3b2d0",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "285b03b",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "285b03b",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "285b03b",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "método para conversão pra string",
+          "cada objeto da classe deveria armazenar inteiros d"
+        ]
+      }
+    ]
   }
 }

@@ -58,5 +58,60 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "6a154e9",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "7ba35a0",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "2f342eb",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "44cf8c0",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "cada objeto da classe deveria armazenar inteiros de 0 até um valor máximo, e não até MAXIMO-1",
+          "os métodos que retornam uma nova instância deveriam ser estáticos"
+        ]
+      }
+    ]
   }
 }

@@ -70,5 +70,53 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "53ba1ed",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "53ba1ed",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "53ba1ed",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "53ba1ed",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

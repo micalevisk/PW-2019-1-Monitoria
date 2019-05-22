@@ -58,5 +58,59 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "0be8b81",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "0be8b81",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "o último item do enunciado não foi implementado totalmente"
+        ]
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "0be8b81",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "0be8b81",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

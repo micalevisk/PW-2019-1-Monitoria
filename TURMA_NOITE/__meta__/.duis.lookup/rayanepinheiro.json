@@ -64,5 +64,61 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "4f92a7f",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "f8df0de",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "6687653",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "cbdf14b",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "erro ao reproduzir os testes",
+          "cada objeto da classe deveria armazenar inteiros de 0 até um valor máximo, e não até MAXIMO-1",
+          "os métodos deveriam retornar a instância do IntegerSet criado. Assim, os métodos que atuam sobre 2 instâncias, deveriam ser estáticos"
+        ]
+      }
+    ]
   }
 }

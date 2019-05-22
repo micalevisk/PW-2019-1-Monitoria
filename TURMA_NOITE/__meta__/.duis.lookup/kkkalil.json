@@ -64,5 +64,41 @@
         "a": "exato"
       }
     ]
+  },
+  "JS2": {
+    "_id": "ac0d920",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "ac0d920",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "ac0d920",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

@@ -64,5 +64,59 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "a79cc7c",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "c364fc1",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "a info da jogada do computador é sempre a mesma (\"O computador jogou Tesoura\")"
+        ]
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "c364fc1",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "c364fc1",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

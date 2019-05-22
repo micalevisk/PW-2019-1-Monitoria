@@ -58,5 +58,60 @@
         "a": "exato"
       }
     ]
+  },
+  "JS1": {
+    "_id": "3383dda",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS2": {
+    "_id": "3383dda",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS3": {
+    "_id": "3893d21",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },
+  "JS4": {
+    "_id": "3893d21",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "cada objeto da classe deveria armazenar inteiros de 0 até um valor máximo, e não até MAXIMO-1",
+          "todas as funções deveriam ser métodos da classe. Métodos de instância e de classe"
+        ]
+      }
+    ]
   }
 }
