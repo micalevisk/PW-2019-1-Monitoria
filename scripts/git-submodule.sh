@@ -1,7 +1,7 @@
 #!/bin/bash
 
 show_help_and_exit() {
-  printf "USAGE: $0 {add <target_dir> <username> [repo-name] | pull}\\n"
+  printf "USAGE: %s {add <target_dir> <username> [repo-name] | pull}\\n" "$0"
   exit 1
 }
 
@@ -17,7 +17,7 @@ if [ "$command" == "add" ]; then
   USERNAME="${3,,}"
   REPO_NAME="${4:-ProgWeb}"
 
-  [ -d "${TARGET_DIR}" ] || { printf "'${TARGET_DIR}' is not a directory.\\n" ; exit 2; }
+  [ -d "${TARGET_DIR}" ] || { printf "'%s' is not a directory.\\n" "$TARGET_DIR" ; exit 2; }
 
   git rm -rf --cached "${TARGET_DIR}/${USERNAME}"
   rm -rf ".git/modules/${TARGET_DIR#*/}/${USERNAME}"
