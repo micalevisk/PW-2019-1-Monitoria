@@ -1,4 +1,6 @@
-const path = require('path')
+// Ensure we're in the project directory, so relative paths work as expected
+process.chdir(__dirname)
+
 const fs = require('fs')
 const md2jsonParser = require('md-2-json')
 
@@ -9,8 +11,7 @@ module.exports.markdownToJSON = md2jsonParser.parse
  * @returns {string}
  */
 module.exports.readFile = function (pathToFile) {
-  return fs.readFileSync(
-    path.join(__dirname, pathToFile)).toString()
+  return fs.readFileSync(pathToFile).toString()
 }
 
 function findValueByKey(obj, keyToLookup, predicate = (key) => (key === keyToLookup)) {
