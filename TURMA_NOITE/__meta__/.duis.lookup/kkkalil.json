@@ -65,6 +65,18 @@
       }
     ]
   },
+  "JS1": {
+    "_id": "7a68a8e",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
+  },  
   "JS2": {
     "_id": "ac0d920",
     "extra": {
