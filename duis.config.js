@@ -56,13 +56,21 @@ module.exports = {
 
   /*************************** OPCIONAIS ***************************/
 
-  // lista de templates do glob pattern usado para ignorar durante a busca dos "parent dir"
+  // glob pattern dos arquivos que serão ignorados nas buscas do duis-exec
   excludeMasks: [
-    './{TURMA}/**/__*__', // exemplo: excluindo qualquer arquivo que inicie e termine com `__`
+    './{TURMA}/**/__*__', // excluindo qualquer arquivo que inicie e termine com `__`
   ],
 
   // nome padrão para o identificador no lookup
-  entryDirName: '', // se for um valor falsy, o padrão será inferido a partir dos argumentos do CLI
+  entryDirName: '', // se for um valor falsy, o padrão será inferido a partir dos argumentos do duis-exec
+
+  // configuração da sessão que será usada no duis-exec
+  session: {
+    // `true` se deseja iniciar uma nova sessão
+    new: false,
+    // caminho para o arquivo de sessão
+    file: '.duis.session' // se for um valor falsy, a sessão não será salva
+  },
 
   // navegador que abrirá na pasta do aluno (ou o server, se iniciado)
   browser: {
@@ -71,16 +79,20 @@ module.exports = {
     autoOpen: true, // se o navegador deve ser aberto automaticamente a cada "workingdir"
   },
 
-  // porta em que o servidor PHP tentará escutar
-  _serverPort: 8080,
+  // configuração do servidor para o duis-exec
+  server: {
+    // caminho para o arquivo binário (executável)
+    bin: 'php', // atualmente, suporta apenas o CLI do PHP
+    port: 8080 // porta em que o servidor tentará escutar
+  },
 
-  _test: {
+  _test: { // o underscore é apenas para que o Duis não encontre esta config `test`, já que não está realmente definida aqui
     // como devem terminar os arquivos de testes, i.e, a extensão deles
     fileExtName: '.test.js',
     // template do diretório em que estarão descritos os testes para cada "trabalho" (workingdir)
-    dirPathMask: './{TURMA}/__meta__/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
+    dirPathMask: './{TURMA}/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
     // comando que será executado sobre o arquivo de "teste" do trabalho corrente
-    commandToRun: 'testcafe chrome:headless --color -u'
+    command: 'testcafe chrome:headless --color -u'
   },
 
   // questões a serem respondidas imediatamente após o setup das config
@@ -96,7 +108,7 @@ module.exports = {
   hooks: {
     // antes de procurar pelos diretórios
     beforeStart: [
-      './scripts/git-submodule.sh pull',
+      ['./scripts/git-submodule.sh', 'pull'],
     ],
 
     // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
@@ -106,10 +118,15 @@ module.exports = {
     beforeLeaveWD: [],
 
     // após ter percorrido todos os "workingdir" encontrados
-    onFinish: [],
+    onFinish: [
+      ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
+      // |                      ^------- command arguments
+      // +----- command
+      // ^ usando um programa interno que sincronizará os lookups com um Google Spreadsheet
+    ]
   },
 
   // `true` para sempre confirmar a execução de comandos definidos pelo usuário
-  safe: false,
+  safe: true,
 
 }
