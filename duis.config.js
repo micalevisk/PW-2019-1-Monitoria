@@ -86,7 +86,7 @@ module.exports = {
     port: 8080 // porta em que o servidor tentará escutar
   },
 
-  _test: { // o underscore é apenas para que o Duis não encontre esta config `test`, já que não está realmente definida aqui
+  _test: {// o underscore é apenas para que o Duis não encontre esta config `test`, já que não está realmente definida aqui
     // como devem terminar os arquivos de testes, i.e, a extensão deles
     fileExtName: '.test.js',
     // template do diretório em que estarão descritos os testes para cada "trabalho" (workingdir)
@@ -109,6 +109,7 @@ module.exports = {
     // antes de procurar pelos diretórios
     beforeStart: [
       ['./scripts/git-submodule.sh', 'pull'],
+      ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
     ],
 
     // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"

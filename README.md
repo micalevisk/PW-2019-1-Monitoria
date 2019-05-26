@@ -32,4 +32,4 @@ ATIVIDADE | PRAZO
 
 ## Exemplo usando o [Duis](https://github.com/micalevisk/duis)
 
-[![demo duis](https://asciinema.org/a/YiRrGMGAgkyJUaExW74oL6pxo.svg)](https://asciinema.org/a/YiRrGMGAgkyJUaExW74oL6pxo)
+[![demo duis](https://asciinema.org/a/Kbom9bHj3jemnyQo7mxNYRi07.svg)](https://asciinema.org/a/Kbom9bHj3jemnyQo7mxNYRi07)
