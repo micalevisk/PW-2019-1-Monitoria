@@ -41,6 +41,15 @@ const myStartQuestions = [
     default: 'TURMA_NOITE',
     validate: answer => !answer.trim() ? 'Informe algo' : true
   },
+  {
+    type: 'input',
+    name: 'ENTRY',
+    message: 'id do exercício que será corrigido',
+    validate: answer => {
+      if (!input.trim()) return 'Informe algo!'
+      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(answer) ? 'Formato inválido' : true
+    }
+  }
 ]
 
 module.exports = {
@@ -108,6 +117,7 @@ module.exports = {
   hooks: {
     // antes de procurar pelos diretórios
     beforeStart: [
+      ['firefox', 'https://github.com/micalevisk/PW-2019-1-Monitoria/blob/master/exerc%C3%ADcios/{ENTRY}.png'],
       ['./scripts/git-submodule.sh', 'pull'],
       ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
     ],
