@@ -106,5 +106,17 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM1": {
+    "_id": "18dfb2d",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

@@ -120,5 +120,23 @@
         ]
       }
     ]
+  },
+  "DOM1": {
+    "_id": "cbdf14b",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não usou o `Math.PI`, gerando uma saída diferente do enunciado"
+        ]
+      }
+    ]
   }
 }

@@ -112,5 +112,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM1": {
+    "_id": "2895302",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

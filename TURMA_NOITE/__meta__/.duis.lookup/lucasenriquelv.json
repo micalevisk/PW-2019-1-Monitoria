@@ -118,5 +118,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM1": {
+    "_id": "fa6eeee",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

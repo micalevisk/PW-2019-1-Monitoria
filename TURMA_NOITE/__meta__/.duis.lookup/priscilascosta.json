@@ -124,5 +124,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM1": {
+    "_id": "b55247a",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

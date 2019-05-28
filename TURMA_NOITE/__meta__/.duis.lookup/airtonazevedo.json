@@ -106,5 +106,23 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM1": {
+    "_id": "fed4a8e",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não usou o `Math.PI`, gerando uma saída diferente do enunciado"
+        ]
+      }
+    ]
   }
 }
