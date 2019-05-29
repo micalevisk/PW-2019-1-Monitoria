@@ -46,8 +46,8 @@ const myStartQuestions = [
     name: 'ENTRY',
     message: 'id do exercício que será corrigido',
     validate: answer => {
-      if (!input.trim()) return 'Informe algo!'
-      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(answer) ? 'Formato inválido' : true
+      if (!answer.trim()) return 'Informe algo!'
+      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(answer) ? true : 'Formato inválido'
     }
   }
 ]
