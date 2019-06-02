@@ -26,6 +26,8 @@ if [ "$command" == "add" ]; then
     "https://github.com/${USERNAME}/${REPO_NAME}" \
     "${TARGET_DIR}/${USERNAME}"
 
+  [ $? -ne 0 ] && exit 3
+
   read -rsn1 -p 'Can commit? (y/N) ' can_commit
   [ "${can_commit,,}" == "y" ] && {
     printf "\\n"

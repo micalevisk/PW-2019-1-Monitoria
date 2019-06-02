@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # Exit immediately if a simple command exits with a non-zero status
 
 show_help_and_exit() {
   printf "USAGE: $0 <target_dir> <task-id>\\n"
