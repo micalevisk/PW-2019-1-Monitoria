@@ -8,18 +8,21 @@
 
 workingdir = diretório que será alvo da correção
   - será aberto pelo browser e servido como document root pelo servidor PHP
-  - junção do `workingdirParentDirPathMask` e caminho pro diretório do trabalho a ser corrigido
+  - junção do `workingdirParentDirPath` e caminho pro diretório do trabalho a ser corrigido
 
 parent dir = diretório pai do `workingdir`
   - será usado como ponto de referência para encontrar todos os `workingdir`
   - deve estar 1 nível atrás do `workingdir`
-  - seu caminho estará descrito na variável `workingdirParentDirPathMask`
+  - seu caminho estará descrito na variável `workingdirParentDirPath`
 
 root dir = diretório que contém o `.git`
   - será usado para realizar comandos Git
   - estará no mesmo nível que os demais diretórios git (dos outros alunos), portanto deve ser único
   - o nome desse dir. será usado como nome do arquivo de lookup
   - a variável `levelsToRootDir` indica seu caminho em relação ao `workingdir`
+
+Com execeção dos campos: `session.file`, `startQuestions` e `workingdirQuestions`,
+todas as strings podem ser escritas em forma de "template" em que os placeholders são textos entre chaves.
 **************************************************************************************************/
 
 //  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ ███████╗
@@ -45,20 +48,20 @@ const myStartQuestions = [
     type: 'input',
     name: 'ENTRY',
     message: 'id do exercício que será corrigido',
-    validate: answer => {
+    validate: (input) => {
       if (!input.trim()) return 'Informe algo!'
-      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(answer) ? 'Formato inválido' : true
+      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(input) ? true : 'Formato inválido'
     }
   }
 ]
 
 module.exports = {
 
-  // template do diretório que registrará as correções realizadas
-  lookupDirPathMask: './{TURMA}/__meta__/.duis.lookup/',
-
   // template do diretório parent ao que será passado como arg do Duis
-  workingdirParentDirPathMask: './{TURMA}/*/',
+  workingdirParentDirPath: './{TURMA}/*/',
+
+  // template do diretório que registrará as correções realizadas
+  lookupDirPath: './{TURMA}/__meta__/.duis.lookup/', // arquivos ocultos serão ignorados na busca dos "parent dir"
 
   // a partir do diretório "workingdir", é preciso voltar quantos níveis para ir ao que tem o `.git` (do aluno)?
   levelsToRootDir: 0, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
@@ -66,7 +69,7 @@ module.exports = {
   /*************************** OPCIONAIS ***************************/
 
   // glob pattern dos arquivos que serão ignorados nas buscas do duis-exec
-  excludeMasks: [
+  excludePatterns: [
     './{TURMA}/**/__*__', // excluindo qualquer arquivo que inicie e termine com `__`
   ],
 
@@ -99,7 +102,7 @@ module.exports = {
     // como devem terminar os arquivos de testes, i.e, a extensão deles
     fileExtName: '.test.js',
     // template do diretório em que estarão descritos os testes para cada "trabalho" (workingdir)
-    dirPathMask: './{TURMA}/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
+    dirPath: './{TURMA}/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
     // comando que será executado sobre o arquivo de "teste" do trabalho corrente
     command: 'testcafe chrome:headless --color -u'
   },
