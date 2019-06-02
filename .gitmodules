@@ -102,3 +102,7 @@
 	path = TURMA_NOITE/kkkalil
 	url = https://github.com/kkkalil/ProgWeb
 	branch = master
+[submodule "TURMA_NOITE/carllavicna"]
+	path = TURMA_NOITE/carllavicna
+	url = https://github.com/carllavicna/programacaoweb
+	branch = master
