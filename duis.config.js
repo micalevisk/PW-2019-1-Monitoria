@@ -48,10 +48,7 @@ const myStartQuestions = [
     type: 'input',
     name: 'ENTRY',
     message: 'id do exercício que será corrigido',
-    validate: (input) => {
-      if (!input.trim()) return 'Informe algo!'
-      return (/^(HTML|CSS|JS|DOM|Node)\d+$/).test(input) ? true : 'Formato inválido'
-    }
+    validate: answer => !answer.trim() ? 'Informe algo!' : true
   }
 ]
 
@@ -92,7 +89,7 @@ module.exports = {
   },
 
   // configuração do servidor para o duis-exec
-  server: {
+  _server: {
     // caminho para o arquivo binário (executável)
     bin: 'php', // atualmente, suporta apenas o CLI do PHP
     port: 8080 // porta em que o servidor tentará escutar
@@ -133,6 +130,7 @@ module.exports = {
 
     // após ter percorrido todos os "workingdir" encontrados
     onFinish: [
+      ['./scripts/git-addcommit-task.sh', '{TURMA}', '{ENTRY}'],
       ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
       // |                      ^------- command arguments
       // +----- command
