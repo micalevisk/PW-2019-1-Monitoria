@@ -168,5 +168,17 @@
         ]
       }
     ]
+  },
+  "Node1": {
+    "_id": "c9166d6",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

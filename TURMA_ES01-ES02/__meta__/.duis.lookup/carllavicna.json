@@ -142,5 +142,17 @@
         "a": "exato"
       }
     ]
+  },
+  "Node1": {
+    "_id": "90fedc0",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

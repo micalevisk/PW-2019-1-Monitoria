@@ -154,5 +154,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "Node1": {
+    "_id": "e350eff",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

@@ -149,5 +149,23 @@
         "a": "exato"
       }
     ]
+  },
+  "Node1": {
+    "_id": "f8bf04f",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "ler o diretório antes de iniciar o server (poderia usar o `.readdirSync`) ou antes de enviar a resposta"
+        ]
+      }
+    ]
   }
 }

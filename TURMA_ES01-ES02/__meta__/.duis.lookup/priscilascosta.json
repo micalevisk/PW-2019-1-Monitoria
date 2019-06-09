@@ -160,5 +160,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "Node1": {
+    "_id": "ad4d096",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

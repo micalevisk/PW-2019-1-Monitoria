@@ -154,5 +154,17 @@
         ]
       }
     ]
+  },
+  "Node1": {
+    "_id": "2895302",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

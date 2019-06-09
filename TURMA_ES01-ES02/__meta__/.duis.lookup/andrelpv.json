@@ -148,5 +148,17 @@
         "a": "exato"
       }
     ]
+  },
+  "Node1": {
+    "_id": "ec29cf7",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

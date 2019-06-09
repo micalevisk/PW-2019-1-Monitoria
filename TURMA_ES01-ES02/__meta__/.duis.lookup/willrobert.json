@@ -149,5 +149,23 @@
         "a": "exato"
       }
     ]
+  },
+  "Node1": {
+    "_id": "f30d100",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "a resposta do server não espera a leitura do diretório (já que o `.readdir`e o `.createServer` são assíncronos)"
+        ]
+      }
+    ]
   }
 }

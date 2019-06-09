@@ -148,5 +148,23 @@
         "a": "exato"
       }
     ]
+  },
+  "Node1": {
+    "_id": "23ac2a6",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "aceitar o nome de um diretório como parâmetro"
+        ]
+      }
+    ]
   }
 }

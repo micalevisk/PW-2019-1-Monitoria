@@ -148,5 +148,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "Node1": {
+    "_id": "3c117a2",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

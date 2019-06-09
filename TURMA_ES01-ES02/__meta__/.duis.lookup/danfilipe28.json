@@ -180,5 +180,23 @@
         ]
       }
     ]
+  },
+  "Node1": {
+    "_id": "384b970",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não precisava do `\"/home/\"`"
+        ]
+      }
+    ]
   }
 }

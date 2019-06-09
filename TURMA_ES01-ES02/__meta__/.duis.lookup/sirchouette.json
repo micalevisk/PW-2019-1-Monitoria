@@ -148,5 +148,23 @@
         "a": "inválido"
       }
     ]
+  },
+  "Node1": {
+    "_id": "577ebbd",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "instanciar o servidor"
+        ]
+      }
+    ]
   }
 }
