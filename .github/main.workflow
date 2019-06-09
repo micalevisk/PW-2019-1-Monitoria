@@ -21,7 +21,7 @@ action "Shellcheck" {
 
 action "Install and Build" {
   uses = "actions/npm@master"
-  args = "build-webpage"
+  args = "run-script build-webpage"
 }
 
 action "Deploy" {
@@ -31,6 +31,6 @@ action "Deploy" {
   env = {
     BASE_BRANCH = "master"
     BRANCH = "gh-pages"
-    FOLDER = "webpages/dist"
+    FOLDER = "webpage/dist"
   }
 }
