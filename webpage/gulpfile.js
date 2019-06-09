@@ -105,7 +105,14 @@ function createSubmodulesMetadata(gitSubmodulesPath) {
 
 const classes = createSubmodulesMetadata( path.join(__dirname, '..', '.gitmodules') )
 
+const formatFor = (src, fnCasting = String) => (target, prop, idx) =>
+  Object.assign(target, { [prop]: fnCasting(src[idx]) })
+
 const markdownREADME = _.markdownToJSON( _.readFile('README.md') )
+
+const metodologia = _.getTableFromMarkdownSection(markdownREADME, 'metodo')
+const lookupDescriptionFromCategory = metodologia['CATEGORIA'].reduce(formatFor(metodologia['DESCRIÇÃO']), {})
+
 const tabelaPrazos = _.getTableFromMarkdownSection(markdownREADME, 'prazos')
 const lookupEntryToLink = tabelaPrazos['ATIVIDADE'].reduce((acum, curr) => {
   const [, entry, link] = curr.match(/\[([^\]]+)\]\((.+)\)/)
@@ -134,6 +141,7 @@ gulp.task('ejs:build', () =>
         locals: {
           // array de array "tuplas" no formato [TURMA, alunos]
           classList: Object.entries(classes),
+          lookupDescriptionFromCategory,
           lookupEntryToLink,
         }
       }).on('error', gulpEjsMonster.preventCrash))

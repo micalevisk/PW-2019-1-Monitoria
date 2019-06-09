@@ -3,6 +3,7 @@
 
 const {
   classList = [],
+  lookupDescriptionFromCategory,
   lookupEntryToLink,
 } = locals.entry
 
@@ -76,7 +77,7 @@ const parseNoteTag = tag => tag.replace(/^[^:]+:/, '')
             <a target="_blank" rel="noopener" title="Ver enunciado do <%- entry %>" href="<%= lookupEntryToLink[entry] -%>"><%= entry -%></a>
           </th>
           <td>
-            <span class="code" title="<%= promptCell.a -%>"><%= extra.nota -%></span>
+            <span class="code" title="<%= lookupDescriptionFromCategory[promptCell.a] || '' -%>"><%= extra.nota -%></span>
           </td>
           <% if (hasSomeNote) { -%>
           <td>
