@@ -118,5 +118,23 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM2": {
+    "_id": "7cefd44",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "uma barra (a quinta)"
+        ]
+      }
+    ]
   }
 }

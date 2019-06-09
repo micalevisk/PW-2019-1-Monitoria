@@ -124,5 +124,17 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM2": {
+    "_id": "f482e96",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

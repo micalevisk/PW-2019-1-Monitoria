@@ -138,5 +138,17 @@
         ]
       }
     ]
+  },
+  "DOM2": {
+    "_id": "cbdf14b",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

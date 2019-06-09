@@ -124,5 +124,23 @@
         ]
       }
     ]
+  },
+  "DOM2": {
+    "_id": "0f9d706",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "posicionar as barras corretamente na página"
+        ]
+      }
+    ]
   }
 }
