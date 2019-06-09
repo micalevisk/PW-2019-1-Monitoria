@@ -22,7 +22,7 @@ root dir = diretório que contém o `.git`
   - a variável `levelsToRootDir` indica seu caminho em relação ao `workingdir`
 
 Com execeção dos campos: `session.file`, `startQuestions` e `workingdirQuestions`,
-todas as strings podem ser escritas em forma de "template" em que os placeholders são textos entre chaves.
+todas as strings podem ser escritas em forma de "template" em que os placeholders são palavras entre colchetes.
 **************************************************************************************************/
 
 //  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ ███████╗
@@ -55,10 +55,10 @@ const myStartQuestions = [
 module.exports = {
 
   // template do diretório parent ao que será passado como arg do Duis
-  workingdirParentDirPath: './{TURMA}/*/',
+  workingdirParentDirPath: './[TURMA]/*/',
 
   // template do diretório que registrará as correções realizadas
-  lookupDirPath: './{TURMA}/__meta__/.duis.lookup/', // arquivos ocultos serão ignorados na busca dos "parent dir"
+  lookupDirPath: './[TURMA]/__meta__/.duis.lookup/', // arquivos ocultos serão ignorados na busca dos "parent dir"
 
   // a partir do diretório "workingdir", é preciso voltar quantos níveis para ir ao que tem o `.git` (do aluno)?
   levelsToRootDir: 0, // 0 se não for existir um diretório de trabalho específico, i.e., usado em `duis .`
@@ -67,7 +67,7 @@ module.exports = {
 
   // glob pattern dos arquivos que serão ignorados nas buscas do duis-exec
   excludePatterns: [
-    './{TURMA}/**/__*__', // excluindo qualquer arquivo que inicie e termine com `__`
+    './[TURMA]/**/__*__', // excluindo qualquer arquivo que inicie e termine com `__`
   ],
 
   // nome padrão para o identificador no lookup
@@ -99,7 +99,7 @@ module.exports = {
     // como devem terminar os arquivos de testes, i.e, a extensão deles
     fileExtName: '.test.js',
     // template do diretório em que estarão descritos os testes para cada "trabalho" (workingdir)
-    dirPath: './{TURMA}/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
+    dirPath: './[TURMA]/__tests__', // os arquivos devem estar no formato: `<ENTRY_DIR>.<fileExtName>`
     // comando que será executado sobre o arquivo de "teste" do trabalho corrente
     command: 'testcafe chrome:headless --color -u'
   },
@@ -117,9 +117,9 @@ module.exports = {
   hooks: {
     // antes de procurar pelos diretórios
     beforeStart: [
-      ['firefox', 'https://github.com/micalevisk/PW-2019-1-Monitoria/blob/master/exerc%C3%ADcios/{ENTRY}.png'],
+      ['firefox', 'https://github.com/micalevisk/PW-2019-1-Monitoria/blob/master/exerc%C3%ADcios/[ENTRY].png'],
       ['./scripts/git-submodule.sh', 'pull'],
-      ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
+      ['pw-update-spreadsheet', './[TURMA]/__meta__/.duis.lookup'],
     ],
 
     // antes de abrir o navegador na pasta do aluno -- assim que entrar no "workingdir"
@@ -130,8 +130,8 @@ module.exports = {
 
     // após ter percorrido todos os "workingdir" encontrados
     onFinish: [
-      ['./scripts/git-addcommit-task.sh', '{TURMA}', '{ENTRY}'],
-      ['pw-update-spreadsheet', './{TURMA}/__meta__/.duis.lookup'],
+      ['./scripts/git-addcommit-task.sh', '[TURMA]', '[ENTRY]'],
+      ['pw-update-spreadsheet', './[TURMA]/__meta__/.duis.lookup'],
       // |                      ^------- command arguments
       // +----- command
       // ^ usando um programa interno que sincronizará os lookups com um Google Spreadsheet
