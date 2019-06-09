@@ -130,5 +130,17 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "30d19a4",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

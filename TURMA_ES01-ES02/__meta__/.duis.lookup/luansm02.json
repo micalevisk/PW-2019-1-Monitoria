@@ -142,5 +142,17 @@
         ]
       }
     ]
+  },
+  "DOM3": {
+    "_id": "a8352c6",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

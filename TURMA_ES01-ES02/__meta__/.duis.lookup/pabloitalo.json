@@ -136,5 +136,23 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "2895302",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "manter o rastro com apenas 8 pontos"
+        ]
+      }
+    ]
   }
 }

@@ -136,5 +136,23 @@
         ]
       }
     ]
+  },
+  "DOM3": {
+    "_id": "8dd94f8",
+    "extra": {
+      "nota": 9.9
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "usar o evento `mousemove`"
+        ]
+      }
+    ]
   }
 }

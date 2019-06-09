@@ -136,5 +136,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "e46e000",
+    "extra": {
+      "nota": 10
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "exato"
+      }
+    ]
   }
 }

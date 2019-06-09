@@ -161,5 +161,24 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "78bd6cc",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não removeu os pontos",
+          "usou o `.removeChild` de forma errada"
+        ]
+      }
+    ]
   }
 }

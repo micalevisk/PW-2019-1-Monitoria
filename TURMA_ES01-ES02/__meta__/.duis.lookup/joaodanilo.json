@@ -136,5 +136,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "b54e057",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

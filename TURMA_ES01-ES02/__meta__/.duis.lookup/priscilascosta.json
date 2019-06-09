@@ -148,5 +148,17 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "ad4d096",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

@@ -150,5 +150,23 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM3": {
+    "_id": "cbdf14b",
+    "extra": {
+      "nota": 7
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "manter o rastro com apenas 8 pontos"
+        ]
+      }
+    ]
   }
 }
