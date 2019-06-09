@@ -19,7 +19,13 @@ action "Shellcheck" {
 }
 
 
+action "Install root dependencies" {
+  uses = "actions/npm@master"
+  args = "install"
+}
+
 action "Install and Build" {
+  needs = ["Install root dependencies"]
   uses = "actions/npm@master"
   args = "run-script build-webpage"
 }
