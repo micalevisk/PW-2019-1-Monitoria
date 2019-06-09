@@ -124,5 +124,17 @@
         "a": "exato"
       }
     ]
+  },
+  "DOM2": {
+    "_id": "e46e000",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

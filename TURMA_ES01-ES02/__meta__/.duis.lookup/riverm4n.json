@@ -124,5 +124,17 @@
         ]
       }
     ]
+  },
+  "DOM2": {
+    "_id": "08639b1",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }

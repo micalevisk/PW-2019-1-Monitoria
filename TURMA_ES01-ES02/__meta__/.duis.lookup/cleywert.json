@@ -125,5 +125,17 @@
         "a": "inválido"
       }
     ]
+  },
+  "DOM2": {
+    "_id": "38ccf90",
+    "extra": {
+      "nota": 0
+    },
+    "prompts": [
+      {
+        "q": "cell:nota",
+        "a": "inválido"
+      }
+    ]
   }
 }
