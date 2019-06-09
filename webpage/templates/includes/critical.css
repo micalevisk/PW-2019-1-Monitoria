@@ -92,6 +92,10 @@ h3 {
   color: #aaa;
 }
 
+#top {
+  text-align: center;
+}
+
 
 /* para os prompts com nome inciando com `note:` */
 .faltou {
