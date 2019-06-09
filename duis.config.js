@@ -41,7 +41,7 @@ const myStartQuestions = [
     type: 'input',
     name: 'TURMA',
     message: 'Turma (dir. pai dos repos dos alunos)',
-    default: 'TURMA_ ES01-ES02',
+    default: 'TURMA_ES01-ES02',
     validate: answer => !answer.trim() ? 'Informe algo' : true
   },
   {
