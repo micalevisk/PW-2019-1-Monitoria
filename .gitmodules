@@ -1,108 +1,108 @@
-[submodule "TURMA_NOITE/vmroque"]
-	path = TURMA_NOITE/vmroque
+[submodule "TURMA_ES01-ES02/vmroque"]
+	path = TURMA_ES01-ES02/vmroque
 	url = https://github.com/vmroque/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/lucasenriquelv"]
-	path = TURMA_NOITE/lucasenriquelv
+[submodule "TURMA_ES01-ES02/lucasenriquelv"]
+	path = TURMA_ES01-ES02/lucasenriquelv
 	url = https://github.com/lucasenriquelv/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/anandagaguiar"]
-	path = TURMA_NOITE/anandagaguiar
+[submodule "TURMA_ES01-ES02/anandagaguiar"]
+	path = TURMA_ES01-ES02/anandagaguiar
 	url = https://github.com/anandagaguiar/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/priscilascosta"]
-	path = TURMA_NOITE/priscilascosta
-	url = https://github.com/priscilascosta/ProgWeb
-	branch = master
-[submodule "TURMA_NOITE/marcosccp04"]
-	path = TURMA_NOITE/marcosccp04
+[submodule "TURMA_ES01-ES02/marcosccp04"]
+	path = TURMA_ES01-ES02/marcosccp04
 	url = https://github.com/marcosccp04/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/riverm4n"]
-	path = TURMA_NOITE/riverm4n
+[submodule "TURMA_ES01-ES02/riverm4n"]
+	path = TURMA_ES01-ES02/riverm4n
 	url = https://github.com/riverm4n/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/kelvinnpereira"]
-	path = TURMA_NOITE/kelvinnpereira
+[submodule "TURMA_ES01-ES02/kelvinnpereira"]
+	path = TURMA_ES01-ES02/kelvinnpereira
 	url = https://github.com/kelvinnpereira/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/luansm02"]
-	path = TURMA_NOITE/luansm02
+[submodule "TURMA_ES01-ES02/luansm02"]
+	path = TURMA_ES01-ES02/luansm02
 	url = https://github.com/luansm02/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/sirchouette"]
-	path = TURMA_NOITE/sirchouette
+[submodule "TURMA_ES01-ES02/sirchouette"]
+	path = TURMA_ES01-ES02/sirchouette
 	url = https://github.com/sirchouette/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/andrelpv"]
-	path = TURMA_NOITE/andrelpv
+[submodule "TURMA_ES01-ES02/andrelpv"]
+	path = TURMA_ES01-ES02/andrelpv
 	url = https://github.com/andrelpv/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/danfilipe28"]
-	path = TURMA_NOITE/danfilipe28
+[submodule "TURMA_ES01-ES02/danfilipe28"]
+	path = TURMA_ES01-ES02/danfilipe28
 	url = https://github.com/danfilipe28/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/icomp-felipe"]
-	path = TURMA_NOITE/icomp-felipe
+[submodule "TURMA_ES01-ES02/icomp-felipe"]
+	path = TURMA_ES01-ES02/icomp-felipe
 	url = https://github.com/icomp-felipe/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/willrobert"]
-	path = TURMA_NOITE/willrobert
+[submodule "TURMA_ES01-ES02/willrobert"]
+	path = TURMA_ES01-ES02/willrobert
 	url = https://github.com/willrobert/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/rayanepinheiro"]
-	path = TURMA_NOITE/rayanepinheiro
+[submodule "TURMA_ES01-ES02/rayanepinheiro"]
+	path = TURMA_ES01-ES02/rayanepinheiro
 	url = https://github.com/rayanepinheiro/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/cleywert"]
-	path = TURMA_NOITE/cleywert
+[submodule "TURMA_ES01-ES02/cleywert"]
+	path = TURMA_ES01-ES02/cleywert
 	url = https://github.com/cleywert/exercicios-de-web
 	branch = master
-[submodule "TURMA_NOITE/pabloitalo"]
-	path = TURMA_NOITE/pabloitalo
+[submodule "TURMA_ES01-ES02/pabloitalo"]
+	path = TURMA_ES01-ES02/pabloitalo
 	url = https://github.com/pabloitalo/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/isabellyrohana"]
-	path = TURMA_NOITE/isabellyrohana
+[submodule "TURMA_ES01-ES02/isabellyrohana"]
+	path = TURMA_ES01-ES02/isabellyrohana
 	url = https://github.com/isabellyrohana/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/airtonazevedo"]
-	path = TURMA_NOITE/airtonazevedo
+[submodule "TURMA_ES01-ES02/airtonazevedo"]
+	path = TURMA_ES01-ES02/airtonazevedo
 	url = https://github.com/airtonazevedo/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/joaodanilo"]
-	path = TURMA_NOITE/joaodanilo
+[submodule "TURMA_ES01-ES02/joaodanilo"]
+	path = TURMA_ES01-ES02/joaodanilo
 	url = https://github.com/joaodanilo/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/alexandermdc"]
-	path = TURMA_NOITE/alexandermdc
+[submodule "TURMA_ES01-ES02/alexandermdc"]
+	path = TURMA_ES01-ES02/alexandermdc
 	url = https://github.com/alexandermdc/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/ponciano7"]
-	path = TURMA_NOITE/ponciano7
+[submodule "TURMA_ES01-ES02/ponciano7"]
+	path = TURMA_ES01-ES02/ponciano7
 	url = https://github.com/ponciano7/progweb2
 	branch = master
-[submodule "TURMA_NOITE/levirod"]
-	path = TURMA_NOITE/levirod
-	url = https://github.com/levirod/progweb
+[submodule "TURMA_ES01-ES02/levirod"]
+	path = TURMA_ES01-ES02/levirod
+	url = https://github.com/levirod/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/aplos21"]
-	path = TURMA_NOITE/aplos21
-	url = https://github.com/aplos21/progweb
+[submodule "TURMA_ES01-ES02/aplos21"]
+	path = TURMA_ES01-ES02/aplos21
+	url = https://github.com/aplos21/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/clemilton"]
-	path = TURMA_NOITE/clemilton
+[submodule "TURMA_ES01-ES02/clemilton"]
+	path = TURMA_ES01-ES02/clemilton
 	url = https://github.com/clemilton/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/kamilaeliza"]
-	path = TURMA_NOITE/kamilaeliza
+[submodule "TURMA_ES01-ES02/kamilaeliza"]
+	path = TURMA_ES01-ES02/kamilaeliza
 	url = https://github.com/kamilaeliza/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/kkkalil"]
-	path = TURMA_NOITE/kkkalil
+[submodule "TURMA_ES01-ES02/kkkalil"]
+	path = TURMA_ES01-ES02/kkkalil
 	url = https://github.com/kkkalil/ProgWeb
 	branch = master
-[submodule "TURMA_NOITE/carllavicna"]
-	path = TURMA_NOITE/carllavicna
+[submodule "TURMA_ES01-ES02/carllavicna"]
+	path = TURMA_ES01-ES02/carllavicna
 	url = https://github.com/carllavicna/programacaoweb
+	branch = master
+[submodule "TURMA_ES01-ES02/priscilascosta"]
+	path = TURMA_ES01-ES02/priscilascosta
+	url = https://github.com/priscilascosta/ProgWeb
 	branch = master
