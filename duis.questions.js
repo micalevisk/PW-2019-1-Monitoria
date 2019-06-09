@@ -29,7 +29,7 @@ const workingdirQuestions = [
   },
   {
     type: 'input',
-    name: 'note:obs',
+    name: 'note:observação',
     message: 'Observações (separar por `;`)',
     when: answers => ['plágio', 'suspeito'].includes( getCategoriaFromAnswers(answers) ),
     filter: answer => answer.split(';').map(a => a.trim()),
