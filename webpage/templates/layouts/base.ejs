@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="<%- locals.blocks.favicon %>"/>
+    <title><%- locals.blocks.title -%></title>
+
+    <style><%- locals.include('includes/ghpages_basic.css') %></style>
+    <style><%- locals.include('includes/critical.css') %></style>
+  </head>
+  <body>
+    <%- locals.body %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+    <script>
+      // lib Add deep anchor links to your docs: https://www.bryanbraun.com/anchorjs
+      var anchors = new AnchorJS();
+      anchors.options={placement:'left',visible:'always'};
+      anchors.add('h3');
+    </script>
+  </body>
+</html>

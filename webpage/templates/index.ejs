@@ -1,0 +1,10 @@
+<% locals.setLayout('layouts/base.ejs') -%>
+<% locals.block('favicon', 'favicon.ico') -%>
+<% locals.block('title', 'PW Monitoria Report') -%>
+
+<div class="container-lg px-3 my-5 markdown-body">
+  <h1 id="top">Programação para Web 2019/1 &mdash; UFAM</h1>
+  <%- locals.widget('students.ejs', { ...locals }) %>
+  <hr />
+  <a href="#top">↑</a>
+</div>

@@ -1,0 +1,14 @@
+{
+  "name": "pw-2019-1-monitoria-webpage",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp build",
+    "prewatch": "gulp",
+    "watch": "gulp build:watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-ejs-monster": "^3.2.0"
+  }
+}

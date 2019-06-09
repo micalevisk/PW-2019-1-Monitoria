@@ -1,0 +1,109 @@
+<%
+  // TODO: considerar a nova estrutura de `classList`
+
+const {
+  classList = [],
+  lookupEntryToLink,
+} = locals.entry
+
+if (!classList.length) {
+  return '<h3>Nenhum aluno :(</h3>'
+}
+
+const total = Object.keys(lookupEntryToLink).length
+const progress = amount => Math.trunc(amount / total * 100)
+const parseNoteTag = tag => tag.replace(/^[^:]+:/, '')
+-%>
+
+<% classList.forEach(([classId, students]) => { -%>
+<div>
+  <h2><%= classId.replace(/_/g, ' ').replace(/-/g, '/') -%></h2>
+  <details open>
+    <summary>Alunos Avaliados</summary>
+    <ol>
+      <% students.forEach(({ username }) => { -%>
+      <li><a href="#<%- username %>"><%= username -%></a></li>
+      <% }) -%>
+    </ol>
+  </details>
+</div>
+<hr />
+
+  <%
+  students.forEach(({ username, repoURL, lookup, hasSomeNote }) => {
+    const percent = progress( Object.keys(lookup).length )
+    const totallyEvaluated = (percent === 100)
+    const evaluatedMsg = totallyEvaluated ? 'Todas os exercícios foram corrigidos' : 'Alguns exercícios não foram corrigidos ainda'
+    const srcLabel = `https://img.shields.io/badge/corrigido-${percent}%25-6E4A7E.svg`
+    const repoName = repoURL.split(/\/\/?/, 4).pop()
+  -%>
+  <section class="content__section" id="<%- username %>">
+
+  <h3 id="<%- username %>">
+    <span class="author"><%= username -%></span>
+    <span class="path-divider">/</span>
+    <span><%= repoName -%></span>
+    <span title="<%- evaluatedMsg %>">
+      <% if (totallyEvaluated) { -%>
+      <svg fill="#28a745" aria-label="4 / 4 checks OK" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+      <% } else { -%>
+      <svg fill="#cb2431" aria-label="13 / 17 checks OK" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+      <% } -%>
+    </span>
+  </h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Atividade</th>
+        <th>Nota</th>
+        <% if (hasSomeNote) { -%>
+        <th>Detalhes</th>
+        <% } -%>
+        <th>Versão</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%
+      let total = 0
+      let sum = 0
+      lookup.forEach(({ entry, commit, promptNote, promptCell, extra }) => {
+        total++
+        sum += extra.nota
+      -%>
+        <tr>
+          <th>
+            <a target="_blank" rel="noopener" title="Ver enunciado do <%- entry %>" href="<%= lookupEntryToLink[entry] -%>"><%= entry -%></a>
+          </th>
+          <td>
+            <span class="code" title="<%= promptCell.a -%>"><%= extra.nota -%></span>
+          </td>
+          <% if (hasSomeNote) { -%>
+          <td>
+            <% if (promptNote) { -%>
+              <ul>
+              <%
+              const noteMsg = parseNoteTag(promptNote.q)
+              promptNote.a.forEach((note) => { -%>
+                <li class="<%- noteMsg %>" title="<%- noteMsg %>"><%= note -%></li>
+              <% }) -%>
+              </ul>
+            <% } -%>
+          </td>
+          <% } -%>
+          <td>
+            <a class="code" target="_blank" rel="noopener" title="Ver versões no commit <%- commit %>" href="<%- repoURL + '/tree/' + commit %>"><%= commit -%></a>
+          </td>
+        </tr>
+      <% }) -%>
+        <tr title="Média dos Exercícios Práticos Individuais (MEP)">
+          <th>Média</th>
+          <td class="code"><%= (sum/total).toFixed(2) -%></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </section>
+  <% }) -%>
+
+<% }) -%>

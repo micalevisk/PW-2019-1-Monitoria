@@ -149,3 +149,5 @@ $RECYCLE.BIN/
 
 # Duis session file
 *duis.session*
+
+dist/

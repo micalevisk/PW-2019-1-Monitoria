@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+          box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.content__section {
+  position: relative;
+  padding: 0.2rem;
+}
+
+.content__section:target::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1rem;
+  left: -1rem;
+  width: 0.2rem;
+  background-color: #c65c13;
+}
+
+table * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+thead th {
+  background: #24292e;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 6px;
+}
+
+td {
+  text-align: center;
+}
+
+a,
+.anchorjs-link:hover {
+  color: #0366d6;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(104,182,255,0.5);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  padding: 0 0 0 1em;
+}
+
+.author {
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.path-divider {
+  color: #6a737d;
+}
+
+.anchorjs-link {
+  color: #aaa;
+}
+
+
+/* para os prompts com nome inciando com `note:` */
+.faltou {
+  color: #990000;
+  text-align: justify;
+}
+
+.obs {
+  color: #776b00;
+  text-align: justify;
+}
