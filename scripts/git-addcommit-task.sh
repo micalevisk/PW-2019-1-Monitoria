@@ -20,7 +20,7 @@ files_to_commit="$(git ls-files -t --others --modified "${LOOKUP_DIR_PATH}" | cu
 mapfile -t arrfiles <<< "$files_to_commit" ## will logs the files
 COMMIT_MSG="correção-${TASK_ID}: ${#arrfiles[@]} aluno(s)"
 
-to_username() { printf "@%s\\n" $(basename "$2" ".json") ; }
+to_username() { printf "%s\\n" $(basename "$2" ".json") ; }
 COMMIT_DESCRIPTION="$(mapfile -c 1 -C 'to_username' -t <<< "$files_to_commit")"
 
 for i in "${!arrfiles[@]}"; do printf "%s %s\\n" "$((i + 1))" "${arrfiles[$i]}"; done
