@@ -68,11 +68,21 @@ a,
 .anchorjs-link:hover {
   color: #0366d6;
   text-decoration: none;
-  text-shadow: 0 0 3px rgba(104,182,255,0.5);
+  text-shadow: 0 0 2px rgba(104, 182, 255, 0.5);
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.hidden-link {
+  color: #333;
+  text-shadow: none;
+}
+
+.hidden-link:hover {
+  text-shadow: 0 0 1px rgba(47, 50, 53, 0.5);
+  text-decoration: none;
 }
 
 h3 {
@@ -84,7 +94,8 @@ h3 {
   text-transform: lowercase;
 }
 
-.path-divider {
+.path-divider::before {
+  content: "/";
   color: #6a737d;
 }
 
