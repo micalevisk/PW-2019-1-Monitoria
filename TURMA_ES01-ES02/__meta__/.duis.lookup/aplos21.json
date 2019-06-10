@@ -24,38 +24,38 @@
     ]
   },
   "CSS1": {
-    "_id": "f2a5165",
+    "_id": "1033ff0",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "CSS2": {
-    "_id": "f2a5165",
+    "_id": "1033ff0",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "CSS3": {
-    "_id": "f2a5165",
+    "_id": "1033ff0",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
