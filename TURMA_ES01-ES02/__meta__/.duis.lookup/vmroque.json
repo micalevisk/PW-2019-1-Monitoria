@@ -24,7 +24,7 @@
     ]
   },
   "CSS1": {
-    "_id": "fafc12c",
+    "_id": "81a5900",
     "extra": {
       "nota": 10
     },
@@ -36,26 +36,26 @@
     ]
   },
   "CSS2": {
-    "_id": "fafc12c",
+    "_id": "81a5900",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "CSS3": {
-    "_id": "fafc12c",
+    "_id": "81a5900",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
