@@ -1,20 +1,26 @@
 workflow "Run ShellCheck, build and deploy report page to gh-pages" {
   on = "push"
   resolves = [
-    "Shellcheck",
-    "Deploy"
+    "Run ShellCheck",
+    "Deploy to gh-pages"
   ]
 }
 
-# Filter for branch `master`
-action "Master" {
+
+action "On master branch" {
   uses = "actions/bin/filter@master"
   args = "branch master"
 }
 
+action "Is revision commit" {
+  uses = "./.github/actions/filter-commit-message"
+  # This regex is run using "grep -P"
+  args = "^correção-"
+}
 
-action "Shellcheck" {
-  needs = "Master"
+
+action "Run ShellCheck" {
+  needs = ["On master branch"]
   uses = "ludeeus/action-shellcheck@master"
 }
 
@@ -30,8 +36,8 @@ action "Install and Build" {
   args = "run-script build-webpage"
 }
 
-action "Deploy" {
-  needs = ["Master", "Install and Build"]
+action "Deploy to gh-pages" {
+  needs = ["Is revision commit", "On master branch", "Install and Build"]
   uses = "JamesIves/github-pages-deploy-action@master"
   secrets = ["ACCESS_TOKEN"]
   env = {
@@ -40,3 +46,4 @@ action "Deploy" {
     FOLDER = "webpage/dist"
   }
 }
+
