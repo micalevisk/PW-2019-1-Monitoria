@@ -170,14 +170,20 @@
     ]
   },
   "Node1": {
-    "_id": "c9166d6",
+    "_id": "fdaf674",
     "extra": {
-      "nota": 0
+      "nota": 10
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "a resposta do server não espera a leitura do diretório (já que o `.readdir` e o `.createServer` são assíncronos)"
+        ]
       }
     ]
   }
