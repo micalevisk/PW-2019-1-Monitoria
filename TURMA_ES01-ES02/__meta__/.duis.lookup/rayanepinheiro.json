@@ -114,11 +114,16 @@
       {
         "q": "note:faltou",
         "a": [
-          "erro ao reproduzir os testes",
           "cada objeto da classe deveria armazenar inteiros de 0 até um valor máximo, e não até MAXIMO-1",
           "os métodos deveriam retornar a instância do IntegerSet criado. Assim, os métodos que atuam sobre 2 instâncias, deveriam ser estáticos"
         ]
-      }
+      },
+      {
+        "q": "note:observação",
+        "a": [
+          "erro ao reproduzir os testes",
+        ]        
+      }      
     ]
   },
   "DOM1": {
