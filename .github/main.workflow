@@ -12,10 +12,10 @@ action "On master branch" {
   args = "branch master"
 }
 
-action "Is revision commit" {
+action "Is valid commit" {
   uses = "./.github/actions/filter-commit-message"
   # This regex is run using "grep -P"
-  args = "^correção-"
+  args = "^(correção-|up:)"
 }
 
 
@@ -37,7 +37,7 @@ action "Install and Build" {
 }
 
 action "Deploy to gh-pages" {
-  needs = ["Is revision commit", "On master branch", "Install and Build"]
+  needs = ["Is valid commit", "On master branch", "Install and Build"]
   uses = "JamesIves/github-pages-deploy-action@master"
   secrets = ["ACCESS_TOKEN"]
   env = {
