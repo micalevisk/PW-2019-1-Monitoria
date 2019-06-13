@@ -15,7 +15,7 @@ action "On master branch" {
 action "Is valid commit" {
   uses = "./.github/actions/filter-commit-message"
   # This regex is run using "grep -P"
-  args = "^(correção-|up:)"
+  args = "^(correção-|up:|fix:|add:)"
 }
 
 
