@@ -108,31 +108,37 @@
     ]
   },
   "DOM1": {
-    "_id": "eeddff3",
+    "_id": "98505fb",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "não usou o `Math.PI`, gerando uma saída diferente do enunciado"
+        ]
       }
     ]
   },
   "DOM2": {
-    "_id": "d88aa9e",
+    "_id": "98505fb",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "DOM3": {
-    "_id": "d88aa9e",
+    "_id": "98505fb",
     "extra": {
       "nota": 0
     },
