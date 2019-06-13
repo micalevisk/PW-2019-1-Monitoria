@@ -169,9 +169,14 @@
         "q": "note:faltou",
         "a": [
           "erro ao testar",
-          "a resposta da requisição não espera a leitura do diretório",
-          "não deveria usar o `global`"
+          "a resposta da requisição não espera a leitura do diretório"
         ]
+      },
+      {
+        "q": "note:observação",
+        "a": [
+          "não deveria usar o `global`"
+        ]        
       }
     ]
   }
