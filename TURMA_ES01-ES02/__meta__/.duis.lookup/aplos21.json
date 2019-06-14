@@ -150,14 +150,14 @@
     ]
   },
   "Node1": {
-    "_id": "d88aa9e",
+    "_id": "7301829",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   }
