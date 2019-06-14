@@ -84,14 +84,14 @@
     ]
   },
   "JS3": {
-    "_id": "eeddff3",
+    "_id": "98505fb",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
