@@ -1,37 +1,37 @@
 {
   "HTML1": {
-    "_id": "f332908",
+    "_id": "f30ae06",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "HTML2": {
-    "_id": "f332908",
+    "_id": "f30ae06",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "CSS1": {
-    "_id": "f332908",
+    "_id": "f30ae06",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
@@ -48,14 +48,14 @@
     ]
   },
   "CSS3": {
-    "_id": "f332908",
+    "_id": "f30ae06",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
