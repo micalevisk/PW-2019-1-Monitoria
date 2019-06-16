@@ -84,26 +84,33 @@
     ]
   },
   "JS3": {
-    "_id": "f222288",
+    "_id": "3e0f1c1",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "JS4": {
-    "_id": "f222288",
+    "_id": "3e0f1c1",
     "extra": {
-      "nota": 0
+      "nota": 3
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "incompleto"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "os métodos deveriam ser estáticos e retornar uma nova instância",
+          "o valor máximo (indicado no enunciado) não foi considerado"
+        ]
       }
     ]
   },
@@ -150,9 +157,9 @@
     ]
   },
   "Node1": {
-    "_id": "2dc35e9",
+    "_id": "3e0f1c1",
     "extra": {
-      "nota": 10
+      "nota": 6
     },
     "prompts": [
       {
