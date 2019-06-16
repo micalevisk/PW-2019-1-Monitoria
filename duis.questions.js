@@ -25,14 +25,18 @@ const workingdirQuestions = [
     name: 'note:faltou',
     message: 'O que faltou? (separar por `;`)',
     when: answers => ['quase', 'incompleto'].includes( getCategoriaFromAnswers(answers) ),
-    filter: answer => answer.split(';').map(a => a.trim()),
+    filter: answer => _.splitAndFilter(';', answer),
   },
   {
     type: 'input',
     name: 'note:observação',
     message: 'Observações (separar por `;`)',
-    when: answers => ['plágio', 'suspeito'].includes( getCategoriaFromAnswers(answers) ),
-    filter: answer => answer.split(';').map(a => a.trim()),
+    filter: (answer) => {
+      const values = _.splitAndFilter(';', answer)
+      if (values.length) return values
+      return undefined // para não listar no lookup
+    },
+    transformer: input => input || '',
   },
   {
     type: 'input',

@@ -50,3 +50,17 @@ module.exports.getTableFromMarkdownSection = function (mdContent, sectionId) {
   const indexStartTable = mdSection.indexOf('|')
   return markdownTableToJSON(mdSection.substr(indexStartTable))
 }
+
+/**
+ *
+ * @param {string} sep
+ * @param {string} input
+ * @returns {string[]}
+ */
+module.exports.splitAndFilter = function (sep, input) {
+  return input.split(sep).reduce((validVals, val) => {
+    const normalizedVal = val.trim()
+    if (normalizedVal.length) validVals.push(normalizedVal)
+    return validVals
+  }, [])
+}

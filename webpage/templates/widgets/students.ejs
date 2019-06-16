@@ -72,7 +72,7 @@ const parseNoteTag = tag => tag.replace(/^[^:]+:/, '')
       <%
       let totalNotas = 0
       let sumNotas = 0
-      lookup.forEach(({ entry, commit, promptNote, promptCell, extra }) => {
+      lookup.forEach(({ entry, commit, promptNotes, promptCell, extra }) => {
         totalNotas++
         sumNotas += extra.nota
       -%>
@@ -85,12 +85,14 @@ const parseNoteTag = tag => tag.replace(/^[^:]+:/, '')
           </td>
           <% if (hasSomeNote) { -%>
           <td>
-            <% if (promptNote) { -%>
+            <% if (promptNotes) { -%>
               <ul>
-              <%
-              const noteMsg = parseNoteTag(promptNote.q)
-              promptNote.a.forEach((note) => { -%>
+              <% promptNotes.forEach((promptNote) => { -%>
+                <%
+                const noteMsg = parseNoteTag(promptNote.q)
+                promptNote.a.forEach((note) => { -%>
                 <li class="<%- noteMsg %>" title="<%- noteMsg %>"><%= note -%></li>
+                <% }) -%>
               <% }) -%>
               </ul>
             <% } -%>

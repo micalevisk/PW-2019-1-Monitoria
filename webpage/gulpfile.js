@@ -14,24 +14,26 @@ function mergeLookups(pathToLookupsDir, usernamesToURL) {
   const lookupFilenames = fs.readdirSync(pathToLookupsDir)
   let hasSomeNote = false
 
-  const getPrompt = (prompts, predicate, cbIfFound) => {
-    const prompt = prompts.find(({ q }) => predicate(q))
-    if (prompt && ('a' in prompt)) {
+  const getPrompts = (prompts, predicate, cbIfFound) => {
+    const selectedPrompts = prompts.filter(prompt =>
+       predicate(prompt.q) && ('a' in prompt))
+
+    if (selectedPrompts.length) {
       if (typeof cbIfFound === 'function') cbIfFound()
-      return prompt
+      return selectedPrompts
     }
   }
 
-  const getNote = prompts => getPrompt(
+  const getNotes = prompts => getPrompts(
     prompts,
     q => q.startsWith('note:'),
     () => hasSomeNote = true,// side-effect
   )
 
-  const getCellNota = prompts => getPrompt(
+  const getCellNota = prompts => getPrompts(
     prompts,
     q => q === 'cell:nota',
-  )
+  )[0]
 
   return lookupFilenames.reduce((lookups, lookupFilename) => {
     hasSomeNote = false
@@ -43,7 +45,7 @@ function mergeLookups(pathToLookupsDir, usernamesToURL) {
     const meta = Object.entries(currLookup).map(([entryId, value]) => ({
       entry: entryId,
       commit: value._id,
-      promptNote: getNote(value.prompts),
+      promptNotes: getNotes(value.prompts),
       promptCell: getCellNota(value.prompts),
       extra: value.extra,
     }))
