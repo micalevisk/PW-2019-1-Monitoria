@@ -78,38 +78,44 @@
     ]
   },
   "JS2": {
-    "_id": "f666b5b",
+    "_id": "f03f455",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "JS3": {
-    "_id": "f666b5b",
+    "_id": "f03f455",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
   "JS4": {
-    "_id": "f666b5b",
+    "_id": "f03f455",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "os métodos deveriam ser estáticos (static) e retornar uma nova instância"
+        ]
       }
     ]
   },
@@ -126,14 +132,14 @@
     ]
   },
   "DOM2": {
-    "_id": "e46e000",
+    "_id": "f03f455",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "exato"
       }
     ]
   },
