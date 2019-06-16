@@ -122,8 +122,8 @@
         "q": "note:observação",
         "a": [
           "erro ao reproduzir os testes"
-        ]        
-      }      
+        ]
+      }
     ]
   },
   "DOM1": {
@@ -137,7 +137,7 @@
         "a": "quase"
       },
       {
-        "q": "note:faltou",
+        "q": "note:observação",
         "a": [
           "não usou o `Math.PI`, gerando uma saída diferente do enunciado"
         ]

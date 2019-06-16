@@ -118,7 +118,7 @@
         "a": "quase"
       },
       {
-        "q": "note:faltou",
+        "q": "note:observação",
         "a": [
           "não usou o `Math.PI`, gerando uma saída diferente do enunciado"
         ]
@@ -176,7 +176,7 @@
         "q": "note:observação",
         "a": [
           "não deveria usar o `global`"
-        ]        
+        ]
       }
     ]
   }
