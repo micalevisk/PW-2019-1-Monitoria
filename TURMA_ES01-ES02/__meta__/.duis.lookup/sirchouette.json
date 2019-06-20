@@ -114,26 +114,44 @@
     ]
   },
   "DOM1": {
-    "_id": "76cc621",
+    "_id": "81cb037",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "usar o `.toFixed(2)` nos resultados"
+        ]
+      },
+      {
+        "q": "note:observação",
+        "a": [
+          "a equação usada para o cálculo da área está errada, resultando numa saída diferente da saída do enunciado"
+        ]
       }
     ]
   },
   "DOM2": {
-    "_id": "577ebbd",
+    "_id": "81cb037",
     "extra": {
-      "nota": 0
+      "nota": 6
     },
     "prompts": [
       {
         "q": "cell:nota",
-        "a": "inválido"
+        "a": "quase"
+      },
+      {
+        "q": "note:faltou",
+        "a": [
+          "ajustar as margens laterais"
+        ]
       }
     ]
   },
